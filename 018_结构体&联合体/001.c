@@ -14,33 +14,42 @@ struct Person
 	}info;
 };
 
-
 int main(void)
 {
 	struct Person person[2];
-
 	int i;
 	for (i = 0; i < 2; i++)
 	{
-		scanf_s("%s %c %d %c", &person[i].name, &person[i].sex, &person[i].age,&person[i].job);
-		if (person[i].job == 's') {
+		// 修正：%s传缓冲区大小12；char变量加&，并传大小1
+		scanf_s("%s %c %d %c",
+			person[i].name, 12,
+			&person[i].sex, 1,
+			&person[i].age,
+			&person[i].job, 1);
+
+		if (person[i].job == 's')
+		{
 			scanf_s("%d", &person[i].info.class);
 		}
-		else if (person[i].job == 't') {
-			scanf_s("%s", &person[i].info.position);
+		else if (person[i].job == 't')
+		{
+			scanf_s("%s", person[i].info.position, 20);
 		}
 	}
 
-	for (size_t i = 0; i < 2; i++)
+	for (i = 0; i < 2; i++)
 	{
-		if (person[i].job == 's') {
-			printf("%s %c %d %c %d", person[i].name, person[i].sex, person[i].age, person[i].job,person[i].info.class);
+		if (person[i].job == 's')
+		{
+			printf("%s %c %d %c %d\n",
+				person[i].name, person[i].sex, person[i].age, person[i].job, person[i].info.class);
 		}
-		else if (person[i].job == 't') {
-			printf("%s %c %d %c %s", person[i].name, person[i].sex, person[i].age, person[i].job,person[i].info.position);
+		else if (person[i].job == 't')
+		{
+			printf("%s %c %d %c %s\n",
+				person[i].name, person[i].sex, person[i].age, person[i].job, person[i].info.position);
 		}
 	}
+
 	return 0;
 }
-
-//张三 m 18 s 108
