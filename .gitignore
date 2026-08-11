@@ -1,0 +1,24 @@
+# Visual Studio 缓存/配置
+.vs/
+*.suo
+*.wsuo
+*.user
+
+# 编译输出目录
+Debug/
+Release/
+x64/
+
+# 编译产物
+*.exe
+*.pdb
+*.ilk
+*.idb
+*.obj
+*.obj.enc
+*.ipch
+*.pch
+*.tlog/
+*.recipe
+*.log
+*.lastbuildstate
