@@ -170,17 +170,29 @@ struct Student
 {
 	char name[20];
 	float grade;
+	long long int id;
 };
 
 int main(void)
 {
 	struct Student* stu;
-	stu= malloc(sizeof(struct Student));
+	stu = malloc(sizeof(struct Student));
+	
 	if (stu == NULL)
 	{
 		printf("no!");
 		return 1;
 	}
+
+	stu->grade = 99.5;
+	stu->id = 202501202060;
+	strcpy_s(stu->name, 4, "why");
+
+	printf("%lld\n", stu->id);
+	printf("%s\n",stu->name);
+	printf("%.2f\n",stu->grade);
+	printf("%p\n",stu);
+	//打印分配到的地址
 
 	free(stu);
 
