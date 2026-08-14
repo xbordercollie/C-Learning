@@ -35,7 +35,9 @@ int main(void)
 
 	printf("请输入文本：\n");
 
-	gets(temp);
+	//gets(temp);  已弃用，最多输入99字符，多了直接程序崩溃
+	fgets(temp, sizeof(temp), stdin);
+	temp[strcspn(temp, "\n")] = '\0';	//用于去掉回车后的换行
 
 	strcat(str, temp);
 
