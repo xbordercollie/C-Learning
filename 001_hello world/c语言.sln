@@ -55,6 +55,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "025_FILE指针fgets", "..\0
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "026_FILE指针fread&fwrite", "..\026_FILE指针fread&fwrite\026_FILE指针fread&fwrite.vcxproj", "{84A8E290-A106-42A4-A293-13F52CB8D577}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "027_FLIE指针fseek", "..\027_FLIE指针fseek\027_FLIE指针fseek.vcxproj", "{9BDF8D16-FDF4-4ECC-9113-C016EFFCE5F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -271,6 +273,14 @@ Global
 		{84A8E290-A106-42A4-A293-13F52CB8D577}.Release|x64.Build.0 = Release|x64
 		{84A8E290-A106-42A4-A293-13F52CB8D577}.Release|x86.ActiveCfg = Release|Win32
 		{84A8E290-A106-42A4-A293-13F52CB8D577}.Release|x86.Build.0 = Release|Win32
+		{9BDF8D16-FDF4-4ECC-9113-C016EFFCE5F8}.Debug|x64.ActiveCfg = Debug|x64
+		{9BDF8D16-FDF4-4ECC-9113-C016EFFCE5F8}.Debug|x64.Build.0 = Debug|x64
+		{9BDF8D16-FDF4-4ECC-9113-C016EFFCE5F8}.Debug|x86.ActiveCfg = Debug|Win32
+		{9BDF8D16-FDF4-4ECC-9113-C016EFFCE5F8}.Debug|x86.Build.0 = Debug|Win32
+		{9BDF8D16-FDF4-4ECC-9113-C016EFFCE5F8}.Release|x64.ActiveCfg = Release|x64
+		{9BDF8D16-FDF4-4ECC-9113-C016EFFCE5F8}.Release|x64.Build.0 = Release|x64
+		{9BDF8D16-FDF4-4ECC-9113-C016EFFCE5F8}.Release|x86.ActiveCfg = Release|Win32
+		{9BDF8D16-FDF4-4ECC-9113-C016EFFCE5F8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
